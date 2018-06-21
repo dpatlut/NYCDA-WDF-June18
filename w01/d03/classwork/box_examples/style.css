@@ -1,0 +1,99 @@
+/* Box#1 solution */
+/* #one{
+    background-color:magenta;
+}
+
+#two{
+    background-color:yellow;
+    position: relative;
+    left:200px;
+    margin-left:200px;
+}
+
+#three{
+    background-color:royalblue;
+}
+
+#four{
+    background-color:saddlebrown;
+    position: relative;
+    left:200px;
+    margin-left:200px;
+} */
+
+/* .box{
+    height:200px;
+    width: 200px;
+} */
+
+/* Box #2 Solution */
+
+/* .box{
+    height:200px;
+    width: 200px;
+    postion:absolute
+} */
+
+/* #one{
+    background-color:magenta;
+    z-index:1;
+}
+
+#two{
+    background-color:yellow;
+    z-index:2;
+    top:20px;
+    left:20px;
+}
+
+#three{
+    background-color:royalblue;
+    z-index:3;
+    top:40px;
+    left:40px;
+}
+
+#four{
+    background-color:saddlebrown;
+    z-index:4;
+    top:60px;
+    left:60px;
+} */
+
+/* Box 3 solution */
+
+.box{
+    height:200px;
+    width: 200px;
+}
+
+#one{
+    background-color:magenta;
+    height:100%;
+    width:100%;
+}
+
+#two{
+    background-color: yellow;
+    z-index: 2;
+    top: 50px;
+    left: 15%;
+    position: relative;
+}
+
+#three{
+    background-color:royalblue;
+    z-index:3;
+    height:50%;
+    width:50%;
+    position: absolute;
+    bottom:0;
+}
+
+#four{
+    background-color: saddlebrown;
+    z-index: 4;
+    position: absolute;
+    top: 75%;
+    left: 15%;
+}

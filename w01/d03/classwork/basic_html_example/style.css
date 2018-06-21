@@ -1,0 +1,20 @@
+#container{
+    height:400px;
+    width: 700px;
+    background-color:cornflowerblue;
+}
+
+.box{
+    width:25%;
+    height: 100px;
+    background-color:green;
+}
+
+#boxone{
+    position: absolute;
+    background-color:blue;
+}
+
+#boxtwo{
+
+}

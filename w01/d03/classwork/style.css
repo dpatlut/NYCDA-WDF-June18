@@ -1,0 +1,25 @@
+#main-id{
+    color:yellow;
+}
+
+.para{
+    color:orange;
+}
+
+/* p{
+    color:blue!important;
+} */
+
+#sometext{
+    color:yellow;
+}
+
+#sometext{
+    color:orange;
+}
+
+#my-box{
+    height:200px;
+    width:200px;
+    background-color:chocolate;
+}

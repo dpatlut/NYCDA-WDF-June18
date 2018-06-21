@@ -1,0 +1,36 @@
+#one{
+    background-color:rgb(41, 3, 41);
+}
+
+#two{
+    background-color:yellow;
+}
+
+#three{
+    background-color:royalblue;
+}
+
+#four{
+    background-color:saddlebrown;
+
+} 
+
+.box{
+    height:200px;
+    width: 200px;
+}
+
+.container{
+    display:flex;
+}
+
+body{
+    background-color:blue;
+}
+
+
+@media all and (max-width:450px){
+    body{
+        background-color:orange;
+    }
+}
