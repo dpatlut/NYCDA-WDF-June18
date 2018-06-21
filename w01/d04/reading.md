@@ -5,4 +5,4 @@
 2. Git (Getting Started Section)
 https://www.atlassian.com/git/tutorials/setting-up-a-repository
 3. Tutorial
-https://www.learnenough.com/git-tutorial 
+http://git.rocks/getting-started/ 
