@@ -1,0 +1,45 @@
+#container{
+    margin: 0 auto;
+    width: 70%;
+}
+
+#main-homepage-image{
+    text-align: center;
+}
+
+/* Header Styles */
+
+#main-header{
+    display:flex;
+    padding: 20px;
+}
+
+#main-navigation > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: flex-end;
+    font-size: 30px;
+    color: gray;
+    font-family: monospace;
+}
+
+#main-navigation{
+    flex-grow: 1;
+}
+
+/* Article Styles */
+
+.article{
+    padding: 30px;
+    color:grey;
+}
+
+.article-header{
+    font-size: 30px;
+}
+
+#extra-information{
+    display:flex;
+}
