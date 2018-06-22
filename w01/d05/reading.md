@@ -8,3 +8,6 @@ https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/merge-
 4. Do a brief review of javascript by completing the following:
 - https://www.codecademy.com/learn/introduction-to-javascript
 - http://www.learn-js.org/ 
+
+#Lessons
+Git: https://hackmd.io/s/SJlfyv9WX
