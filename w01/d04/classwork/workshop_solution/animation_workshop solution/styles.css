@@ -1,0 +1,40 @@
+.wrapper{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+
+.oompa {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://vignette4.wikia.nocookie.net/fnaf-oc-and-characters-wikia/images/6/63/Oompa_Loompa.png/revision/latest?cb=20150517051004');
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+#two{
+    animation-delay: 2s;
+}
+
+
+#four{
+    animation-delay: 2s;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 0px;}
+    50%  {top: 200px;}
+    100% {top: 0px;}
+}

@@ -1,0 +1,49 @@
+/* #container{
+    height:200px;
+    width: 200px;
+    background-color:orchid;
+    transition: width 2s ease-in-out .5s;
+}
+
+#container:hover{
+    width: 400px;
+} */
+
+#container {
+    height:200px;
+    width: 200px;
+    background-color:orchid;
+    animation: fadeOut 5s linear 2s forwards;
+  }
+
+@keyframes fadeOut {
+    /* from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    } */
+
+    0%{
+        opacity: 1;
+    }
+
+    33%{
+        background-color: yellow;
+    }
+
+    45%{
+        background-color:rosybrown;
+    }
+
+    50%{
+        opacity: 0.5;
+        background-color:orange;
+    }
+
+    100%{
+        opacity: 0;
+    }
+  }
+  
