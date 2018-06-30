@@ -125,3 +125,12 @@
 
 let myName = "David";
 console.log(myName);
+
+let myArr = ["David", "1" , "2"]
+
+for( let i=0; i<myArr.length ; i++ ) {
+    console.log(myArr[i])
+    debugger
+}
+
+
