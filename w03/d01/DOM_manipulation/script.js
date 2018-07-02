@@ -54,46 +54,46 @@ mySection.addEventListener('click', (event) => {
 })
 
 //Event Bubbling Example Practical Example
-// let parent = document.getElementById('section');
+let parent = document.getElementById('section');
 
-// parent.addEventListener('click', (event) => {
-//     event.target.style.backgroundColor = 'yellow';
-//     alert("target = " + event.target.tagName + ", this=" + this.tagName);
-//     event.target.style.backgroundColor = ''
-// });
+parent.addEventListener('click', (event) => {
+    event.target.style.backgroundColor = 'yellow';
+    alert("target = " + event.target.tagName + ", this=" + this.tagName);
+    event.target.style.backgroundColor = ''
+});
 
 
 // this code only runs when the document is finished loading
-// document.addEventListener("DOMContentLoaded", (event) => {
-//     let firstLink = document.getElementById("link-1")
-//     let paragraph = document.getElementById("paragraph")
+document.addEventListener("DOMContentLoaded", (event) => {
+    let firstLink = document.getElementById("link-1")
+    let paragraph = document.getElementById("paragraph")
   
-//     // adds an event listener to the anchor
-//     firstLink.addEventListener("click", (e) => {
-//         console.log(e);
-//       // event represents the event that just took place
-//       // prevents default behavior of anchors which is to jump to a different page
-//       event.preventDefault()
+    // adds an event listener to the anchor
+    firstLink.addEventListener("click", (e) => {
+        console.log(e);
+      // event represents the event that just took place
+      // prevents default behavior of anchors which is to jump to a different page
+      event.preventDefault()
   
-//       // this will occur when the button above is clicked
-//       alert("I clicked this button")
-//     })
+      // this will occur when the button above is clicked
+      alert("I clicked this button")
+    })
 
 
 
   
 //     // loops thru the last two anchors
-//     for(let i = 1; i < paragraph.children.length - 1; ++i) {
-//       // adds event listeners to the last two anchors
-//       paragraph.children[i].addEventListener("click", (event) => {
-//         // gets element that was clicked on
-//         let currentElement = element.target
+    for(let i = 1; i < paragraph.children.length - 1; ++i) {
+      // adds event listeners to the last two anchors
+      paragraph.children[i].addEventListener("click", (event) => {
+        // gets element that was clicked on
+        let currentElement = element.target
   
-//         // prevents default anchor behavior
-//         event.preventDefault()
+        // prevents default anchor behavior
+        event.preventDefault()
   
-//         // alerts the content of the current anchor
-//         alert(currentElement.innerHTML)
-//       })
-//     }
-//   })
+        // alerts the content of the current anchor
+        alert(currentElement.innerHTML)
+      })
+    }
+  })
