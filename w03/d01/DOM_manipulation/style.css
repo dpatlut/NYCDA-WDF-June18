@@ -1,0 +1,34 @@
+/* section {
+    background-color: green;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    cursor: pointer;
+  } */
+  
+  /* div {
+    background-color: blue;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  p {
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    line-height: 50px;
+    margin: 0;
+  }
+   */
+
+  #dogImage{
+      height:300px;
+      width: 300px;
+  }
