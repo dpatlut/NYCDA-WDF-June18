@@ -1,3 +1,22 @@
+#Notes & Resources from today
+
+Inheritance Lesson ES6 Examples:
+https://repl.it/@dpatlut/ES6-Inhertiance 
+
+Workshop Challenges:
+https://hackmd.io/s/By9qvptFf
+
+Find Method: 
+https://www.linkedin.com/pulse/javascript-find-object-array-based-objects-property-rafael/
+
+ES6 Arrow Gotcha in Object Literals:
+https://stackoverflow.com/questions/31095710/methods-in-es6-objects-using-arrow-functions
+
+Workshop Solutions(minus findPhoto): https://repl.it/@dpatlut/Inheritance-Challenges-Solutions 
+
+Daycare-App:
+https://hackmd.io/s/rJmyAfZ77 
+
 #Reading
 
 ## More OOP
