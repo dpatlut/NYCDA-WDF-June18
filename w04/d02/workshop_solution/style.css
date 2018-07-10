@@ -1,0 +1,28 @@
+
+#upper-container{
+    display: flex;
+    overflow: scroll;
+}
+
+.daycare{
+    border:1px solid black;
+    padding:20px;
+    margin:20px;
+}
+
+label, input{
+    display:block;
+    flex-basis: 10%;
+    margin: 5px 0;
+}
+
+form{
+    border:1px solid black;
+    padding:20px;
+    margin:20px;
+}
+
+#lower-container{
+    display: flex;
+    border-top: 1px solid black;
+}
