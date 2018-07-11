@@ -70,7 +70,7 @@ const daycareForm = document.getElementById('create-daycare');
 daycareForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     let nameInput = document.getElementById('daycare-name').value
-    let numWorkers = document.getElementById('daycare-numofworkers').value
+    let numWorkers = parseInt(document.getElementById('daycare-numofworkers').value)
     let dayCareStatus = document.getElementById('daycare-status').value
     if(dayCareStatus === "Clean"){
         dayCareStatus = true;
@@ -82,7 +82,7 @@ daycareForm.addEventListener('submit', (e)=>{
     newDaycare.renderDayCare();
 })
 
-const removeChildButton = document.getElementsByClassName('remove-child')
+// const removeChildButton = document.getElementsByClassName('remove-child')
 
 
 

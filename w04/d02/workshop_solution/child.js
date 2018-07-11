@@ -16,17 +16,24 @@ childForm.addEventListener('submit', (e)=>{
     let hometownInput = document.getElementById('child-hometown').value
     let rudeInput = document.getElementById('child-rude').value
     let daycareInput = parseInt(document.getElementById('child-daycareid').value)
+
     let newChild = new Child(nameInput,ageInput,hometownInput,rudeInput)
 
     if(allDayCareCounter < daycareInput){
         alert('This daycare does not exist')
     }else{
+        //The daycare on the dom with the id of dayCareInput
         let selectedDaycare = document.getElementById(daycareInput).children;
-        let daycareId = document.getElementById(daycareInput).id
+        console.log(selectedDaycare)
+
         let sectionElement = selectedDaycare[selectedDaycare.length-1]
+
         let createdChild = createChild(nameInput);
+
         sectionElement.appendChild(createdChild);
-        dayCareStore[daycareId-1].dayCareChildren.push(newChild);
+        dayCareStore[daycareInput-1].dayCareChildren.push(newChild);
+        
+        
         // console.log(dayCareStore)
     }   
 
