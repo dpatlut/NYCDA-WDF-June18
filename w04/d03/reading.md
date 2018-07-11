@@ -1,5 +1,12 @@
 # Reading
 
+#Links for the lesson
+
+Challenge: https://repl.it/@dpatlut/Double-Stack-Challenge 
+Solution: https://repl.it/@dpatlut/ThisConcreteProcesses 
+
+
+
 ## Working with Axios + Promises
 
 https://github.com/axios/axios 

@@ -1,0 +1,62 @@
+// @import 'colors';
+// @import 'header';
+// @import 'mixins';
+// @import 'placeholders';
+
+  
+
+// #container{
+// background-color: $slighty-brown;
+// width:300px;
+// @include apply-height-times100(5px);
+// @include rounded-corner(5px);
+// @extend %background-image;
+
+//     #header{
+//     color: $red;
+//     @extend %background-image;
+
+//         #title{
+//             font-size:40px;  
+//             @include rounded-corner(4%);
+  
+//         }
+//     }
+
+// }
+
+
+@mixin box-shadow($value, $color){
+    box-shadow: repeat(3, $value) $color
+}
+
+%font-and-family {
+    font-family: Raleway, sans-serif;
+    font-size: 12px
+}
+
+$cyan: cyan;
+$blue: blue;
+$grey: grey;
+
+.thin-shadow {
+    @include box-shadow(1px, black)
+  }
+  
+  table td {
+    @extend %font-and-family;
+    color: $grey;
+    border-radius: 2px;
+    border: 1px solid blue;
+    
+  }
+  
+  h4 {
+    @extend %font-and-family;
+    color: $cyan;
+  }
+  
+  .strong-shadow {
+    @include box-shadow(3px, black);
+  }
+  

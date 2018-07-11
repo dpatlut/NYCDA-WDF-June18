@@ -1,0 +1,9 @@
+@mixin rounded-corner($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin apply-height-times100($height){
+    height: 100 * $height;
+}
