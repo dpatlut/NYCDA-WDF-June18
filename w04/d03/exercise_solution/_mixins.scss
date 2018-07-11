@@ -1,0 +1,39 @@
+// Create a mixin that we will use to define styles for all those pesky boxes you always have to make.
+
+
+// The mixin should take in a height, width and background color argument. 
+
+@mixin box($height, $width, $background-color){
+    height: $height;
+    width: $width;
+    background-color: $background-color;
+
+    // The box must also always have a border of 1px solid black. 
+    border: 1px solid black;
+}
+
+// Add class ‘box-red’ to your nested styles and include the mixin with a height and width of 100px and a background-color of red.
+// Add class ‘box-yellow’ to your nested styles include the mixin with a height and width of 100px and a background-color of yellow.
+.box-red{
+    @include box(100px,100px,red)
+}
+
+.box-yellow{
+    @include box(100px,100px,yellow)
+}
+
+
+// Create a mixin for a breakpoint for screen of max size 450px
+@mixin breakpoint($width){
+    @media screen and (max-width: $width){
+        //some styles
+    }
+}
+
+
+// Create a mixin called “top-lefty” that will take in a top value property and a left value property and will position the element absolutely based on values provided.
+@mixin top-lefty($top,$left){
+    top: $top;
+    left: $left;
+    position: absolute;
+}

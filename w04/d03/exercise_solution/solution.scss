@@ -1,0 +1,69 @@
+
+@import 'navmenu';
+@import 'mixins';
+
+$num: 1;
+
+$lav: #7289da;
+$white: #ffffff;
+$greyish: #99aab5;
+$charcoal: #2c2f33;
+$blackish: #23272a;
+
+
+
+  //Colors loop
+  $colors: darkslateblue seagreen steelblue;
+  @each $color in $colors {
+      .#{$color}-background {
+          background-color: #{$color};
+          height: 20%;
+      }
+  }
+
+
+
+
+#main-container{
+    width:100%;
+
+    .dev-section{
+        width:70%;
+        margin:auto;
+        height:200px;
+
+        #top-section{
+            background-color:$charcoal;
+          }
+          
+          #middle-section{
+            background-color:$greyish;
+          }
+          
+          #lower-section{
+            background-color:$lav;
+          }
+
+      }
+
+     #main-footer{
+        width:100%;
+        height:100px;
+        background-color:orange;
+    }
+
+ }
+ 
+
+ 
+
+ .extend-class{
+   border: 5px solid $blackish;
+ }
+ 
+ 
+ p{
+   @if $num == 2 {  
+     font-size: 2em;  
+   }
+ }

@@ -1,0 +1,16 @@
+nav {
+    background-color: $blackish;
+    ul {
+      list-style-type: none;
+      li {
+        display: inline;
+        color: $white;
+        font-size: 2em;
+            
+      }
+      .link {
+        color: $white * 0.7;
+        font-size: 1.5em;
+      }
+    }
+  }
