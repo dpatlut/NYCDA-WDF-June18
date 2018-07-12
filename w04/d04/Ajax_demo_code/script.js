@@ -30,35 +30,71 @@
 
 
 //Example call for this data
-axios.get("https://api.jsonbin.io/b/5b478839a5a2f34ea6b4867e").then((response) => {
-    console.log(response)
-  })
+// axios.get("https://api.jsonbin.io/b/5b478839a5a2f34ea6b4867e").then((response) => {
+//     console.log(response.data)
+//   }).then(()=>{
+//       console.log('THis happens after my axios call finishes and returns the first then callback')
+//   })
+  
+  
+//   .catch(function (error) {
+//     // handle error
+//     alert('HEY THIS API ISNT WORKING')
+//   })
 
 
 //Combining our knowledge of OOP with our ajax calls
 
-// individual class person
-// class Person {
-//     constructor(firstName, lastName, age, gender) {
-//       this.firstName = firstName
-//       this.lastName = lastName
-//       this.age = age
-//       this.gender = gender
-//     }
-//   }
 
-//   //Create new person from our AJAX call
-//   axios.get("https://jsonbin.io/5b478839a5a2f34ea6b4867e").then((response) => {
-//    let data  = response.data 
-//    let david = new Person(
-//         data["first-name"],
-//         data["last-name"],
-//         data["age"],
-//         data["gender"]
-//     )
+class Daycare {
+    constructor() {
+      this.all = []
+    }
+  
+    // defines method add to People class
+    // it accepts a Person object and adds it to the end
+    // of the "all" array
+    add(child) {
+      this.all.push(child)
+    }
+  
+    get(name) {
+      return this.all.find((element) => {
+        return element.firstName == name
+      })
+    }
+  }
 
-//     //Add david to the dom
-//     let h1 = document.createElement("h1");
-//     h1.innerText = david.name
-//     document.body.appendChild(h1);
-//   })
+  let myDaycare = new Daycare()
+
+
+class Child {
+    constructor(firstName, lastName, age, gender) {
+      this.firstName = firstName
+      this.lastName = lastName
+      this.age = age
+      this.gender = gender
+    }
+  }
+
+  
+
+  //Create new person from our AJAX call
+axios.get("https://api.jsonbin.io/b/5b478839a5a2f34ea6b4867e").then((response) => {
+   let data  = response.data 
+   let orlando = new Child(
+        data["first-name"],
+        data["last-name"],
+        data["age"],
+        data["gender"]
+    )
+
+    let h1 = document.createElement("h1");
+    h1.innerText = orlando.firstName
+    document.body.appendChild(h1);
+
+    myDaycare.add(orlando)
+    // return orlando
+  })
+
+  console.log(myDaycare);
