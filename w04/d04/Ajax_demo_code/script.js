@@ -48,18 +48,18 @@
 
 class Daycare {
     constructor() {
-      this.all = []
+      this.allOfMyChildrenAreHere = []
     }
   
     // defines method add to People class
     // it accepts a Person object and adds it to the end
-    // of the "all" array
+    // of the "allOfMyChildrenAreHere" array
     add(child) {
-      this.all.push(child)
+      this.allOfMyChildrenAreHere.push(child)
     }
   
     get(name) {
-      return this.all.find((element) => {
+      return this.allOfMyChildrenAreHere.find((element) => {
         return element.firstName == name
       })
     }
