@@ -1,0 +1,53 @@
+$text-center: center;
+
+body {
+	background: linear-gradient(#333399, white);
+	height: 100%;
+
+	header {
+		margin-bottom: 30px;
+	}
+
+	.tiles {
+		display: flex;
+	}
+
+	.product {
+		margin-bottom: 30px;
+		background-color: white;
+	}
+	
+	.tile img {
+		max-width: 100%;
+	}
+	
+	
+	.product-title {
+		padding: 10px;
+		text-align: $text-center;
+	}
+	
+	.product-price {
+		text-align: $text-center;
+		padding-bottom: 10px;
+	}
+	
+	.product-status {
+		text-align: $text-center;
+		padding-bottom: 10px;
+		color: red;
+	}
+	
+	.button-show-more {
+		text-align: $text-center;
+	}
+	
+	footer {
+		margin: 20px;
+	}
+
+}
+
+
+
+

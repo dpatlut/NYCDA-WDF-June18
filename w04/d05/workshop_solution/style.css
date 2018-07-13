@@ -1,0 +1,49 @@
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#333399), to(white));
+  background: linear-gradient(#333399, white);
+  height: 100%;
+}
+
+body header {
+  margin-bottom: 30px;
+}
+
+body .tiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .product {
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+body .tile img {
+  max-width: 100%;
+}
+
+body .product-title {
+  padding: 10px;
+  text-align: center;
+}
+
+body .product-price {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+body .product-status {
+  text-align: center;
+  padding-bottom: 10px;
+  color: red;
+}
+
+body .button-show-more {
+  text-align: center;
+}
+
+body footer {
+  margin: 20px;
+}
+/*# sourceMappingURL=style.css.map */
