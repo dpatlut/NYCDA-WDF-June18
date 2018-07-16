@@ -1,0 +1,38 @@
+#main-wrapper{
+    background: linear-gradient(lightblue, white);
+    height: 100vh;
+
+    #search-form-wrapper{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        form{
+            input{
+                padding: 10px 80px;
+            }
+            select{
+                height: 40px;
+            }
+        }
+    }
+
+    #weather-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}

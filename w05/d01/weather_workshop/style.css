@@ -1,0 +1,64 @@
+#main-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(lightblue), to(white));
+  background: linear-gradient(lightblue, white);
+  height: 100vh;
+}
+
+#main-wrapper #search-form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+#main-wrapper #search-form-wrapper form input {
+  padding: 10px 80px;
+}
+
+#main-wrapper #search-form-wrapper form select {
+  height: 40px;
+}
+
+#main-wrapper #weather-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
