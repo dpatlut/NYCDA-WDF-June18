@@ -15,6 +15,11 @@ end
 
 def evaluate_guess(guess_number, current_num)
   while guess_number != current_num
+    #Without player_guess method - uncomment below lines
+    #  comment out  line 23
+    #  guess_number = gets.chomp.to_i
+    #  puts "You guessed #{guess_number}"
+    #  give_hint(guess_number, current_num)
     guess_number = player_guess(current_num)
   end
   puts "You won yay"
