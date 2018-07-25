@@ -61,10 +61,6 @@ arr_of_obj = [
 arr_of_obj.each do |el|
     puts el[:name]
 end
-# Do something if a condition evaluates to true	if ( aVariable === true ) { /* do a thing */ }	``
-# Perform logic based on the value of a variable (control flow)	if ( aVariable === 1 ) { /* do a certain thing */ } else if (aVariable === 2) { /* do a different thing */ } else { /* perform a default action */ }
-
-
 
 # 'Merica
 # Create a method that takes a string as an argument and adds the phrase “Only in America!” to the end of it
@@ -159,8 +155,8 @@ transmogrifier(1, 2, 3)
 # Write a method called introduce that accepts two names as strings, and return a string that introduces the two people. 
 # For example, introduce(“Harry”, “Sally”) should return the string “Harry, meet Sally.” `
 
-def introduce
-
+def introduce(name_one, name_two)
+    name_one << "meet" << name_two
 end
 
 
@@ -172,18 +168,6 @@ end
 
 shout "offset", "skrrrt", "skrrrt", "skrrrt" , "Hello world"
 
-
-# Chopped
-# Write a method called chopped that takes an array as an argument and returns an another array with the last element removed.
-def chopped(arr)
-
-end
-
-# how_big
-# Define a method called how_big that takes a string as its lone parameter. The method returns:
-def how_big(str)
-
-end
 
 
 # Weatherman
