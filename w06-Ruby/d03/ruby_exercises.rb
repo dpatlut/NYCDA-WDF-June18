@@ -267,8 +267,9 @@ while answerIsQuit == false do
         answerIsQuit = true
     else answer.to_i
         if mult_five(answer)
-        puts "Your number is divisible by five"
-        else puts "Your number is not divisible by five"
+            puts "Your number is divisible by five"
+        else 
+            puts "Your number is not divisible by five"
         end
     end
 end
