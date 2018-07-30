@@ -1,6 +1,5 @@
 source 'https://rubygems.org' 
 
-gem 'lolize'
 gem 'rest-client'
 gem 'pry'
 gem 'chuck_norris'

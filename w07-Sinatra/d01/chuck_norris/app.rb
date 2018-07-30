@@ -56,7 +56,7 @@ def norris_face
 end
 
 if ARGV.empty?
-  chuck.help
+  ChuckJokes.help
 else
   if ARGV.length == 2
     puts chuck.replace_name(ARGV[0], ARGV[1])
@@ -64,6 +64,6 @@ else
     puts chuck.random
   else
     puts chuck.get_joke_by_id(ARGV[0])
-    norris_face() if chuck.get_joke_by_id(ARGV[0]) == nil
+    # norris_face if chuck.get_joke_by_id(ARGV[0]) == nil
   end
 end
