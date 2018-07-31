@@ -12,9 +12,9 @@ new_game = HanoiGame.new
 
 new_game.setup_disks
 
-new_game.move('left', 'middle')
+# new_game.move('left', 'middle')
 # new_game.print_poles
-new_game.move('middle', 'right')
+# new_game.move('middle', 'right')
 new_game.print_poles
 # #from right stack to left stack
 # new_game.move('left', 'right')
