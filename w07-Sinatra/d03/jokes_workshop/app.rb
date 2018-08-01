@@ -1,7 +1,14 @@
 require 'sinatra'
 require 'rubyjokes'
+require './turtle.rb'
 
 joke = RubyJoke.new
+
+frank = Turtle.new('frank', 60)
+leo = Turtle.new('leo', 90)
+mike = Turtle.new('mike', 7)
+raph = Turtle.new('raph' , 90)
+
 
 #rendering a specific erb template
 get '/test/mypage' do 
@@ -37,5 +44,9 @@ get '/surprise' do
     erb :surprise
 end
 
+get '/tmnt' do 
+    @my_tmnt = [frank, leo, mike, raph]
+    erb :turtles
+end
 
 
