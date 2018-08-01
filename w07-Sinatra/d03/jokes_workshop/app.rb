@@ -11,13 +11,13 @@ raph = Turtle.new('raph' , 90)
 
 
 #rendering a specific erb template
-get '/test/mypage' do 
-    erb :index
-end
+# get '/test/mypage' do 
+#     erb :index
+# end
 
-get '/' do 
-    erb :homepage
-end
+# get '/' do 
+#     erb :homepage
+# end
 
 # get '/surprise' do 
 #     joke.get_single_joke
@@ -35,18 +35,18 @@ end
 #     end
 # end
 
-get '/surprise' do 
-    my_surprise_joke = joke.get_single_joke
-    # @my_surprise_joke = joke.get_single_joke
-    my_surprise_joke2 = joke.get_single_joke
-    my_surprise_joke3 = joke.get_single_joke
-    @my_jokes = [my_surprise_joke, my_surprise_joke2, my_surprise_joke3]
-    erb :surprise
-end
+# get '/surprise' do 
+#     my_surprise_joke = joke.get_single_joke
+#     # @my_surprise_joke = joke.get_single_joke
+#     my_surprise_joke2 = joke.get_single_joke
+#     my_surprise_joke3 = joke.get_single_joke
+#     @my_jokes = [my_surprise_joke, my_surprise_joke2, my_surprise_joke3]
+#     erb :surprise
+# end
 
-get '/tmnt' do 
-    @my_tmnt = [frank, leo, mike, raph]
-    erb :turtles
-end
+# get '/tmnt' do 
+#     @my_tmnt = [frank, leo, mike, raph]
+#     erb :turtles
+# end
 
 
