@@ -2,7 +2,9 @@ require 'sinatra'
 
 get '/search' do 
     puts params
-    'Hello World'
+    #send this info to the database
+    #create a new person instance from this info
+    
 end
 
 get '/formsend' do
