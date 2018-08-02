@@ -1,0 +1,12 @@
+<link href="<%= url('style.css')%>" rel="stylesheet">
+
+<form class="search-container" action="/search" method="POST">
+    <input name="search_input" type="text" id="search-bar" placeholder="What can I help you with today?">
+    <select name="selected" id="dropdown">
+        <option value="films">All Films</option>
+        <option value="people">All People</option>
+        <option value="peopleid">Person by ID</option>
+        <option value="starshipid">Starship by ID</option>
+    </select>
+    <input id="submit" type="submit" value="Go">
+</form>
