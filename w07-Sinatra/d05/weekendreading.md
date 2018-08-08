@@ -17,7 +17,7 @@ https://www.safaribooksonline.com/library/view/relational-theory-for/97814493654
 
 https://wsvincent.com/database-design-tutorial-for-beginners/
 
-### PSQL
+### SQL/PSQL
 https://www.codecademy.com/learn/learn-sql 
 
 https://scotch.io/@javatpoint/an-introduction-about-postgresql-for-beginners
