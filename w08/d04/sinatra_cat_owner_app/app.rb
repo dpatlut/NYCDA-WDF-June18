@@ -1,4 +1,10 @@
 require 'sinatra'
+require "sinatra/activerecord"
+
+require './models/cat.rb'
+require './models/owner.rb'
+
+set :database, {adapter: "postgresql", database: "cat_owners"}
 
 get '/' do 
     erb :index
