@@ -16,7 +16,9 @@ get '/owners' do
 end
 
 get '/owners/:id/cats' do 
-
+    specific_owner_id = params[:id]
+    @owners_cats = Owner.find(specific_owner_id).cat
+    erb :owners_cats
 end
 
 get '/cats' do 
