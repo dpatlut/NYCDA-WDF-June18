@@ -7,6 +7,6 @@ Owner.create(name: 'Milly', phone_number: '777-999-999', address: '908 john')
 Owner.create(name: 'Kevin', phone_number: '666-999-999', address: '9087 john')
 
 
-Cat.create(name: 'Jazmine', age: 10, breed: 'Bothersome')
-Cat.create(name: 'Lisa', age: 9, breed: 'Bothersome')
-Cat.create(name: 'Tom', age: 20, breed: 'Awesome')
+Cat.create(name: 'Jazmine', age: 10, breed: 'Bothersome', owner_id: 1)
+Cat.create(name: 'Lisa', age: 9, breed: 'Bothersome', owner_id: 2)
+Cat.create(name: 'Tom', age: 20, breed: 'Awesome', owner_id: 3)

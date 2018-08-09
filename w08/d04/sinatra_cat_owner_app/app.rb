@@ -11,7 +11,8 @@ get '/' do
 end
 
 get '/owners' do 
-
+    @all_owners = Owner.all
+    erb :owners
 end
 
 get '/owners/:id/cats' do 
@@ -23,5 +24,7 @@ get '/cats' do
 end
 
 get '/cats/:id' do 
-
+    id = params[:id]
+    @specific_cat = Cat.find(id)
+    erb :specific_cat
 end
