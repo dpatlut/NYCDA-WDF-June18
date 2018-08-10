@@ -30,7 +30,7 @@ get '/randomdoggie' do
     random_breed = ['corgie', 'pup'] 
     Dog.create(name: random_dog_name.sample, breed: random_breed.sample, age: 20)
     redirect '/dogs'
-end
+end           
 
 
 get '/owners/:id' do 
