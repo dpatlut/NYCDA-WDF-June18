@@ -16,3 +16,6 @@
 
 # Heroku 
 1. https://stackoverflow.com/questions/11008787/what-exactly-is-heroku
+
+Extra: (Note: Be careful here, this is not the way that we will be doing it but if you want to practice on a dummy project you can try to do it this way.)
+https://medium.com/@dmccoy/deploying-a-simple-sinatra-app-with-postgres-to-heroku-c4a883d3f19e
