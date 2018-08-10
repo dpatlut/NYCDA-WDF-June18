@@ -1,0 +1,14 @@
+<form method="POST" action="/dogs/<%= @current_dog.id %>"> 
+
+    <input type="hidden" name="_method" value="PUT">
+    <%#This is a hidden field we add to trick our browser to send a put request since the browser only recognizes get/post%>
+    <input type="text" name="name" placeholder="Enter a name" value="<%= @current_dog.name %>">
+    <input type="text" name="breed"  placeholder="Enter a breed" value="<%= @current_dog.breed %>">  
+    <input type="text" name="age" placeholder="Enter a age" value="<%= @current_dog.age %>"> 
+    <input type="submit" value="Submit">
+</form>
+
+<form method="POST" action="/dogs/<%= @current_dog.id %>">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete <%= @current_dog.name %>">
+</form>

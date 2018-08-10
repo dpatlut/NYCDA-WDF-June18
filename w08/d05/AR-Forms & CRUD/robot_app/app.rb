@@ -1,6 +1,8 @@
-require "sinatra"
-require "sinatra/activerecord"
-require_relative './models/Robot'
+require 'sinatra'
+require 'sinatra/activerecord'
+require './models/Robot'
+
+set :database, {adapter: "postgresql", database: "robot"}
 
 
 #Basic CRUD Operations in Sinatra w/ AR
