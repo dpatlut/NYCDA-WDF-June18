@@ -1,0 +1,5 @@
+<% @owners.each do |single_owner| %> 
+    <h1> <a href="/owners/<%= single_owner.id %>"> <%= single_owner.name %> </a> </h1>
+    <h1> <%= single_owner.email%> </h1>
+    <h1> <%= single_owner.gender %> </h1>
+<% end %>
