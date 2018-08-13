@@ -16,10 +16,22 @@ get "/" do
   end
 end
 
+
+
+
+
 # displays sign in form
 get "/sign-in" do
   erb :sign_in
 end
+
+
+
+
+
+
+
+
 
 # responds to sign in form
 post "/sign-in" do
@@ -80,4 +92,13 @@ get "/sign-out" do
   flash[:info] = "You have been signed out"
   
   redirect "/"
+end
+
+
+get '/users/:id/edit' do 
+  if session[:user_id] == params[:id]
+    #Access thier user profile edit page
+  else
+    #Redirect them and tell them they do not have access to edit other peoples profile pages
+  end
 end
