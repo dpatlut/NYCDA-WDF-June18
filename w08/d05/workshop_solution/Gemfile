@@ -4,5 +4,6 @@ gem "sinatra"
 gem "sinatra-activerecord"
 gem "pg"
 gem "rake"
+gem 'sinatra-flash'
 gem 'giphy'
 

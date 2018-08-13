@@ -2,7 +2,11 @@ require 'sinatra'
 require 'sinatra/activerecord'
 require './models/dog.rb'
 require './models/owner.rb'
+require './models/user.rb'
+require 'sinatra/flash'
 require 'giphy'
+
+enable :sessions
 
 Giphy::Configuration.configure do |config|
     config.api_key = ENV['API_GIPHY']
@@ -10,10 +14,61 @@ end
 
 set :database, {adapter: "postgresql", database: "dog_owners"}
 
-
-get '/' do 
-    erb :homepage
+#Sign In Form Route
+get '/signin' do 
+    erb :sign_in
 end
+
+#Sign In Route
+post '/signin' do 
+    user = User.find_by(username: params[:username])
+
+    #If the user exists, and thier password is correct, then create a session and redirect them to a logged in page
+    if user && user.password == params[:password]
+        #Create the cookie with the users id
+        session[:user_id] = user.id
+        #Print a helpful message
+        flash[:info] = "#{user.username} has logged in"
+        #redirect to homepage
+        redirect '/'
+    else 
+        flash[:warning] = "Your username does not exist or your password is not correct"
+        redirect '/signin'
+    end
+
+end
+
+#Sign Up Form Route
+
+get '/signup' do 
+    erb :sign_up
+end
+
+#Sign Up Route
+
+post '/signup' do 
+    user = User.create(
+        username: params[:username],
+        password: params[:password]
+    )
+    session[:user_id] = user.id
+    redirect '/'
+end
+
+
+
+
+
+get '/' do
+    if session[:user_id] 
+        erb :homepage
+    else
+        erb :sign_in
+    end
+end
+
+
+
 
 get '/dogs' do 
     @dogs = Dog.all
@@ -91,4 +146,14 @@ delete '/dogs/:id' do
     @current_dog = Dog.find(params[:id])
     @current_dog.destroy
     redirect '/dogs'
+end
+
+private
+
+def get_current_user 
+    User.find(session[:user_id])
+end
+
+def get_specific_dog(id)
+    Dog.find(id)
 end
