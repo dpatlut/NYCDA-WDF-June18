@@ -5,10 +5,10 @@ require "./models/user"
 
 enable :sessions
 
-set :database, {adapter: "postgresql", database: "users_example"}
 
 
 get "/" do
+  flash[:warning] = "HELLO HELP"
   if session[:user_id]
     erb :signed_in_homepage
   else
