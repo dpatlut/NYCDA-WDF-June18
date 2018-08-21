@@ -1,1 +1,3 @@
-<h1> Hello World </h1>
+<% @skaters.each do |single_skater| %>
+    <%= render "skater", locales: { skater: single_skater} 
+<% end %>
