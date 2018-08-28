@@ -8,7 +8,6 @@ class TasksController < ApplicationController
   # GET /tasks/new
   def new
     @task = Task.new
-
   end
 
   # POST /tasks
