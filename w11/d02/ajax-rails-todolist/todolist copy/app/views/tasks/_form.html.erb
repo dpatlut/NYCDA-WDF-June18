@@ -1,0 +1,18 @@
+
+<%= form_for @task, remote: true do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, id: :task_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :status %>
+    <%= f.check_box :status, id: :task_status %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+

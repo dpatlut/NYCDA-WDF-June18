@@ -1,0 +1,6 @@
+<tr id="task-<%= task.id %>">
+  <td><%= task.name %></td>
+  <td><%= task.status %></td>
+  <td><%= link_to 'Edit', edit_task_path(task), remote:true %></td>
+  <td><%= link_to 'Destroy', task_path(task), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %></td>
+</tr>

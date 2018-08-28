@@ -1,0 +1,3 @@
+console.log('I am hitting the js file for update')
+
+$('#edit_task_<%= @task.id %>').replaceWith('<%= j render partial: "task", locals: {task: @task} %>');

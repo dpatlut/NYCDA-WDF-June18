@@ -1,0 +1,27 @@
+
+<h1>Tasks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody id="my-tasks">
+    <% @tasks.each do |task| %>
+      <%= render task %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Task', new_task_path, remote: true, id: "ajaxcall" %>
+
+
+<div id="task-form" style="display:none;">
+</div>
+

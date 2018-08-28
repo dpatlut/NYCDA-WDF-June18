@@ -1,0 +1,11 @@
+console.log('Im hitting this file for the create action')
+
+//Hide my new task form because the user has now submitted the data
+form.style.display = "none";
+
+//Render my new task into a partial and render that partial onto the screen via DOM manipulation
+
+document.getElementById('my-tasks').insertAdjacentHTML('beforeend', '<%= j render partial: "task", locals: {task: @new_task} %>');
+
+
+
