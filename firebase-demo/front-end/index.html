@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+  <audio src="http://www.wavlist.com/soundfx/002/cat-mad2.wav"></audio>
+  <div class="container">
+    <div class="title">
+      <h1>ChattyCat 😺</h1>
+    </div>
+    <div id="allmessages" class="messagebox">
+      
+    </div>
+    <form id="inputMessage">
+        <input name="message" type="text">
+    </form>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!-- WARNING UNSAFE: DO NOT PUSH THIS TO GITHUB-->
+  <!-- WARNING UNSAFE: DO NOT PUSH THIS TO GITHUB-->
+  <!-- replace with your firebase creds  -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAt812gguSWNSJDGk0zUol0XBb8l768Wis",
+        authDomain: "this-is-my-test-project-1411e.firebaseapp.com",
+        databaseURL: "https://this-is-my-test-project-1411e.firebaseio.com",
+        projectId: "this-is-my-test-project-1411e",
+        storageBucket: "this-is-my-test-project-1411e.appspot.com",
+        messagingSenderId: "765385460311"
+    };
+    firebase.initializeApp(config);
+    </script>
+  <!-- replace with your firebase creds -->
+  <!-- WARNING UNSAFE: DO NOT PUSH THIS TO GITHUB-->
+  <!-- WARNING UNSAFE: DO NOT PUSH THIS TO GITHUB-->
+  <script src="script.js"></script>
+</body>
+</html>

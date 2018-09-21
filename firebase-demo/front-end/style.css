@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+  
+  }
+  .container {
+    width:80%;
+    margin: 0 auto;
+  }
+  
+  .message {
+    clear: both;
+    margin-bottom: 10px;
+  }
+  
+  .message *  {
+    display: inline-block;
+  }
+  
+  .username {
+    display: block;
+    margin: 0;
+    margin-top: -12px;
+  }
+  
+  .message-body {
+    line-height: 32px;
+    background: #1DA1F2;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  /* https://mayvendev.com/blog/how-to-center-anything-with-css */
+  .title {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    position: fixed;
+    background: rebeccapurple;
+    color: white;
+    width: 100%;
+    top: 0;
+    left:0;
+  }
+  
+  .messagebox {
+    margin-top: 100px;
+  }
+  
+  .user {
+    float: right;
+  }
+  
+  .user .username {
+    margin-top: 6px;
+  }
+  
+  form * {
+    display: inline-block;
+  }
+  
+  input {
+    padding: 5px 10px;
+    border: none;
+    border: 1px black solid;
+    width: 90%;
+    border-radius: 5px;
+  }
+  
